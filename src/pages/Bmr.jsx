@@ -1,5 +1,6 @@
-import bmr from "./../assets/bmr.png"
+import bmr from "../assets/bmr.png"
 import { Link } from "react-router"
+import Footer from "../components/Footer"
  
 export default function Bmr() {
   return (
@@ -43,7 +44,7 @@ export default function Bmr() {
             </div>
           </form>
         </div>
-
+ 
         {/* แสดงผลลัพธ์ */}
         <div className="w-full mt-5 flex gap-5">
           <p className="font-kanit font-bold text-lg">
@@ -52,14 +53,14 @@ export default function Bmr() {
           <p className="font-kanit font-bold text-lg text-purple-800">
             0.00
           </p>
-
         </div>
-
-        {/* แสดงลิ้งค์กลับไปยังหน้าหลัก */}
-        <Link to="/" className="w-full mt-5 p-3 bg-gray-300 text-center rounded-lg font-kanit font-bold">
+ 
+        {/* แสดงลิงก์สำหรับกลับไปยังหน้าหลัก */}
+        <Link to="/" className="w-full mt-5 p-3 bg-gray-300 text-center rounded-lg font-kanit font-bold hover:bg-gray-400">
           กลับไปยังหน้าหลัก
         </Link>
       </div>
+      <Footer/>
     </>
   )
 }
