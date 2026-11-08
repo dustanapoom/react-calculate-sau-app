@@ -9,7 +9,7 @@ export default function Footer() {
       </p>
  
       <p className="font-itim text-gray-600">
-        Created by 6952D10008 Tanapat Srirabay.
+        Created by 6952D10009 Tanapoom Srirabay.
       </p>
  
       <div className="flex justify-center gap-5 mt-5">
