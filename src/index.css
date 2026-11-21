@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
-@theme{
-  --font-kanit : "Kanit";
-  --font-itim : "Itim";
-  --font-charm : "Charm";
+@theme {
+  --font-kanit: "Kanit", sans-serif;
+  --font-itim: "Itim", sans-serif;
+  --font-charm: "Charm", cursive;
+}
+
+@layer components {
+  .calculator-control {
+    @apply min-w-0 rounded-md border border-gray-300 bg-white px-3 py-2 text-base font-normal shadow-xs focus:border-blue-500 focus:outline-2 focus:outline-blue-500;
+  }
 }

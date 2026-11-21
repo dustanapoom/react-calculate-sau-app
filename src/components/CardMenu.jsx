@@ -1,17 +1,17 @@
 export default function CardMenu({showTitle, showPic, showDetail}) {
   return (
-    <div className='border border-gray-200 p-5 rounded-2xl w-85 shadow-xl
-                    flex flex-col items-center gap-3'>
+    <div className='flex h-full flex-col items-center gap-3 rounded-2xl border border-gray-200
+                    bg-white p-5 text-center shadow-md transition-shadow hover:shadow-xl'>
         {/* แสดงรูป */}
-        <img src={showPic} alt="รูปคำนวณ" className='w-30' />
+        <img src={showPic} alt="" className='size-28 object-contain' />
  
         {/* แสดงชื่อการคำนวณ */}
-        <p className='font-kanit font-bold text-xl text-red-500'>
+        <h2 className='font-kanit font-bold text-xl text-red-700'>
             {showTitle}
-        </p>
+        </h2>
  
         {/* แสดงคำอธิบาย */}
-        <p className='font-charm text-sm'>
+        <p className='font-charm text-base'>
             {showDetail}
         </p>
     </div>
